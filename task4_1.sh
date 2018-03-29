@@ -17,12 +17,12 @@ user_count=`who | wc -l`
 
 #Print that ...
 
-echo "---Hardware---"
+echo "--- Hardware ---"
 echo "CPU:$cpu"
 echo "RAM: $mem KB"
 echo "Motherboard: ${board_name:-Unknown}"
 echo "System Serial Number: ${sys_serial:-Unknown}"
-echo "---System---"
+echo "--- System ---"
 echo "OS Distribution: $distrib"
 echo "Kernel version: $kernel"
 echo "Installation date: $install_date"
@@ -30,7 +30,7 @@ echo "Hostname: `hostname`"
 echo "Uptime:$uptime"
 echo "Processes running: $proc"
 echo "Users logged in: $user_count"
-echo "---Network---"
+echo "--- Network ---"
 
 ints=`ip a | grep -o "[0-9]: [^:]*" | awk '{print $2}'`
 
