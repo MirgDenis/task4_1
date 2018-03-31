@@ -46,3 +46,4 @@ fi
 echo "$name: $addr"
 done
 
+exit 0
